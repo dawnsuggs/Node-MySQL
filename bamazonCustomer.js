@@ -25,25 +25,16 @@ function readProducts() {
 // start();
     // Log all results of the SELECT statement
     console.log(res);
-    connection.end();
+    // connection.end();
   });
 }
-
-// var questions = [
-// {
-//     message: "What is the ID of the product you'd like to order?",
-//     type: "input",
-//     name: "ID"
-// }];
-// inquirer.prompt(questions, processAnswers);
-
 
 // // // function which prompts the user for what action they should take
 // function start() {
 //     inquirer
 //       .prompt([
 //         {
-//           name: "choice",
+//           names: "choice",
 //           type: "rawlist",
 //           choices: function() {
 //             var choiceArray = [];
@@ -90,7 +81,7 @@ function readProducts() {
 //           );
         
 //         else {
-//           // bid wasn't high enough, so apologize and start over
+//           //  not enough, so apologize and start over
 //           console.log("We don't have enough in stock. Please try again...");
 //           start();
 //         }
